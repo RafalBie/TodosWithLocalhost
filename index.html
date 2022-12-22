@@ -1,0 +1,36 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Todos</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <main>
+        <div class="container">
+          <h1 class="app-title">todos</h1>
+          <ul class="todo-list js-todo-list"></ul>
+    
+          <div class="empty-state">
+            <svg class="checklist-icon"><use href="#checklist-icon"></use></svg>
+            <h2 class="empty-state__title"></h2>
+        
+          </div>
+          
+          <form class="js-form">
+            <input autofocus type="text" placeholder="What need to be dane?" class="js-todo-input">
+          </form>
+          <div id="filter">
+            <a href="#" class="filter" id="all">All ( <span id="allCount"></span> )</a>
+            <a href="#" class="filter" id="Active">Active ( <span id="activeCount"></span> )</a>
+            <a href="#" class="filter" id="completed">Completed ( <span id="completeCount"></span> )</a>
+          </div>
+        </div>
+        
+      </main>
+    
+      <script src="script.js"></script>
+  </body>
